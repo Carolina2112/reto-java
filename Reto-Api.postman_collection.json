@@ -1,0 +1,1005 @@
+{
+	"info": {
+		"_postman_id": "97c6be42-9e75-4f38-8e4b-e4473996ea26",
+		"name": "Reto-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45139663",
+		"_collection_link": "https://carolinapantoja.postman.co/workspace/Carolina-Pantoja's-Workspace~6097fc67-3758-43d9-8877-7c419b7a2d9b/collection/45139663-97c6be42-9e75-4f38-8e4b-e4473996ea26?action=share&source=collection_link&creator=45139663"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/clients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"accountNumber\": \"4787578\",\r\n        \"type\": \"Savings\",\r\n        \"initialBalance\": 500.00,\r\n        \"status\": true,\r\n        \"clientId\": 4,\r\n        \"clientName\": \"TestClient NewUpdate\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 4,\r\n        \"accountNumber\": \"4787578\",\r\n        \"type\": \"Savings\",\r\n        \"initialBalance\": 500.00,\r\n        \"status\": true,\r\n        \"clientId\": 4,\r\n        \"clientName\": \"TestClient NewUpdate\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:38:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"identification\": \"123123123\",\n        \"name\": \"Test Client newUpdate\",\n        \"gender\": \"Male\",\n        \"age\": 50,\n        \"address\": \"Test Address\",\n        \"phone\": \"555-1238\",\n        \"clientId\": \"test.client\",\n        \"password\": \"test123\",\n        \"status\": true\n    },\n    {\n        \"id\": 2,\n        \"identification\": \"8954236258\",\n        \"name\": \"Carolina Gutierrez\",\n        \"gender\": \"Female\",\n        \"age\": 22,\n        \"address\": \"Machala y Occidental\",\n        \"phone\": \"0945632589\",\n        \"clientId\": \"carolina.gutierrez\",\n        \"password\": \"1726\",\n        \"status\": true\n    },\n    {\n        \"id\": 3,\n        \"identification\": \"6532784512\",\n        \"name\": \"Roberto Andrade\",\n        \"gender\": \"Male\",\n        \"age\": 35,\n        \"address\": \"Alamor y Zaruma\",\n        \"phone\": \"0978456532\",\n        \"clientId\": \"roberto.andrade\",\n        \"password\": \"7894\",\n        \"status\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/accounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"startDate\": \"2025-01-01\",\r\n  \"endDate\": \"2025-05-20\",\r\n  \"clientId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\": \"2025-01-01\",\r\n  \"endDate\": \"2025-05-20\",\r\n  \"clientId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:37:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"accountNumber\": \"4787578\",\n        \"type\": \"Savings\",\n        \"initialBalance\": 500,\n        \"status\": true,\n        \"clientId\": 4,\n        \"clientName\": \"Test Client newUpdate\"\n    },\n    {\n        \"id\": 2,\n        \"accountNumber\": \"225487\",\n        \"type\": \"Checking\",\n        \"initialBalance\": 63345,\n        \"status\": true,\n        \"clientId\": 2,\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 3,\n        \"accountNumber\": \"495878\",\n        \"type\": \"Checking\",\n        \"initialBalance\": 0,\n        \"status\": true,\n        \"clientId\": 3,\n        \"clientName\": \"Roberto Andrade\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"date\": \"2025-05-20\",\r\n        \"transactionType\": \"Deposit\",\r\n        \"amount\": 800000.00,\r\n        \"balance\": 300.00,\r\n        \"accountId\": 2,\r\n        \"accountNumber\": \"225487\",\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"date\": \"2025-05-20\",\r\n        \"transactionType\": \"Deposit\",\r\n        \"amount\": 800000.00,\r\n        \"balance\": 300.00,\r\n        \"accountId\": 2,\r\n        \"accountNumber\": \"225487\",\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:38:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 8300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 3,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 16300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 4,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 24300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 5,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 32300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 6,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 40300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 7,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 48300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 8,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 56300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 9,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 64300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 10,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 8000,\n        \"balance\": 72300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 11,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Withdrawal\",\n        \"amount\": -200,\n        \"balance\": 72100,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 12,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Withdrawal\",\n        \"amount\": -200,\n        \"balance\": 71900,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 13,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 200,\n        \"balance\": 72100,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 14,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Deposit\",\n        \"amount\": 200,\n        \"balance\": 72300,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    },\n    {\n        \"id\": 15,\n        \"date\": \"2025-05-20\",\n        \"transactionType\": \"Withdrawal\",\n        \"amount\": -8955,\n        \"balance\": 63345,\n        \"accountId\": 2,\n        \"accountNumber\": \"225487\",\n        \"clientName\": \"Carolina Gutierrez\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/clients/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"identification\": \"123123123\",\r\n        \"name\": \"Test Client newUpdate\",\r\n        \"gender\": \"Male\",\r\n        \"age\": 50,\r\n        \"address\": \"Test Address\",\r\n        \"phone\": \"555-1238\",\r\n        \"clientId\": \"test.client\",\r\n        \"password\": \"test123\",\r\n        \"status\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clients/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clients",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 4,\r\n        \"identification\": \"123123123\",\r\n        \"name\": \"Test Client newUpdate\",\r\n        \"gender\": \"Male\",\r\n        \"age\": 50,\r\n        \"address\": \"Test Address\",\r\n        \"phone\": \"555-1238\",\r\n        \"clientId\": \"test.client\",\r\n        \"password\": \"test123\",\r\n        \"status\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/clients/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clients",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:16:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"identification\": \"123123123\",\n    \"name\": \"Test Client newUpdate\",\n    \"gender\": \"Male\",\n    \"age\": 50,\n    \"address\": \"Test Address\",\n    \"phone\": \"555-1238\",\n    \"clientId\": \"test.client\",\n    \"password\": \"test123\",\n    \"status\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/accounts/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"accountNumber\": \"23568977\",\r\n        \"type\": \"Savings\",\r\n        \"initialBalance\": 63345.00,\r\n        \"status\": true,\r\n        \"clientId\": 2,\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/accounts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"accounts",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 2,\r\n        \"accountNumber\": \"23568977\",\r\n        \"type\": \"Savings\",\r\n        \"initialBalance\": 63345.00,\r\n        \"status\": true,\r\n        \"clientId\": 2,\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/accounts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:40:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"accountNumber\": \"225487\",\n    \"type\": \"Savings\",\n    \"initialBalance\": 63345,\n    \"status\": true,\n    \"clientId\": 2,\n    \"clientName\": \"Carolina Gutierrez\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/transactions/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 3,\r\n        \"date\": \"2025-05-20\",\r\n        \"transactionType\": \"Whitdrawal\",\r\n        \"amount\": 5000.00,\r\n        \"balance\": 16300.00,\r\n        \"accountId\": 2,\r\n        \"accountNumber\": \"225487\",\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/transactions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"transactions",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 3,\r\n        \"date\": \"2025-05-20\",\r\n        \"transactionType\": \"Whitdrawal\",\r\n        \"amount\": 5000.00,\r\n        \"balance\": 16300.00,\r\n        \"accountId\": 2,\r\n        \"accountNumber\": \"225487\",\r\n        \"clientName\": \"Carolina Gutierrez\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/transactions/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"transactions",
+								"3"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:43:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/clients",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/clients/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clients",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/clients/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clients",
+								"3"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:44:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/accounts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/accounts/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"accounts",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/accounts/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts",
+								"4"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 20:47:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/clients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/clients",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 21:12:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"identification\": \"123123123\",\n        \"name\": \"Test Client newUpdate\",\n        \"gender\": \"Male\",\n        \"age\": 50,\n        \"address\": \"Test Address\",\n        \"phone\": \"555-1238\",\n        \"clientId\": \"test.client\",\n        \"password\": \"test123\",\n        \"status\": true\n    },\n    {\n        \"id\": 10,\n        \"identification\": \"654123987\",\n        \"name\": \"Ana María Castro\",\n        \"gender\": \"Female\",\n        \"age\": 31,\n        \"address\": \"Av. 6 de Diciembre\",\n        \"phone\": \"098756412\",\n        \"clientId\": \"ana.castro\",\n        \"password\": \"ac1357\",\n        \"status\": true\n    },\n    {\n        \"id\": 11,\n        \"identification\": \"321654987\",\n        \"name\": \"Carlos Montero\",\n        \"gender\": \"Male\",\n        \"age\": 45,\n        \"address\": \"Calle Toledo y Madrid\",\n        \"phone\": \"097845123\",\n        \"clientId\": \"carlos.montero\",\n        \"password\": \"cm9753\",\n        \"status\": true\n    },\n    {\n        \"id\": 12,\n        \"identification\": \"753159852\",\n        \"name\": \"Lucía Hernández\",\n        \"gender\": \"Female\",\n        \"age\": 27,\n        \"address\": \"Av. Amazonas y Patria\",\n        \"phone\": \"098523641\",\n        \"clientId\": \"lucia.hernandez\",\n        \"password\": \"lh8642\",\n        \"status\": true\n    },\n    {\n        \"id\": 13,\n        \"identification\": \"951357456\",\n        \"name\": \"Diego Torres\",\n        \"gender\": \"Male\",\n        \"age\": 33,\n        \"address\": \"Calle Juan León Mera\",\n        \"phone\": \"099784512\",\n        \"clientId\": \"diego.torres\",\n        \"password\": \"dt3579\",\n        \"status\": true\n    },\n    {\n        \"id\": 14,\n        \"identification\": \"159753486\",\n        \"name\": \"Carmen Rodríguez\",\n        \"gender\": \"Female\",\n        \"age\": 29,\n        \"address\": \"Calle Roca y 6 de Diciembre\",\n        \"phone\": \"097856321\",\n        \"clientId\": \"carmen.rodriguez\",\n        \"password\": \"cr2468\",\n        \"status\": true\n    },\n    {\n        \"id\": 15,\n        \"identification\": \"357951486\",\n        \"name\": \"Miguel Ángel Suárez\",\n        \"gender\": \"Male\",\n        \"age\": 41,\n        \"address\": \"Av. República y Eloy Alfaro\",\n        \"phone\": \"098563214\",\n        \"clientId\": \"miguel.suarez\",\n        \"password\": \"ms1357\",\n        \"status\": true\n    },\n    {\n        \"id\": 16,\n        \"identification\": \"852741963\",\n        \"name\": \"Patricia Moreno\",\n        \"gender\": \"Female\",\n        \"age\": 36,\n        \"address\": \"Calle Shyris y Río Coca\",\n        \"phone\": \"099874563\",\n        \"clientId\": \"patricia.moreno\",\n        \"password\": \"pm9753\",\n        \"status\": true\n    },\n    {\n        \"id\": 17,\n        \"identification\": \"963741852\",\n        \"name\": \"Fernando Tapia\",\n        \"gender\": \"Male\",\n        \"age\": 38,\n        \"address\": \"Av. Naciones Unidas\",\n        \"phone\": \"098741253\",\n        \"clientId\": \"fernando.tapia\",\n        \"password\": \"ft8642\",\n        \"status\": true\n    },\n    {\n        \"id\": 18,\n        \"identification\": \"741852963\",\n        \"name\": \"Gabriela Paz\",\n        \"gender\": \"Female\",\n        \"age\": 25,\n        \"address\": \"Calle González Suárez\",\n        \"phone\": \"097412583\",\n        \"clientId\": \"gabriela.paz\",\n        \"password\": \"gp3579\",\n        \"status\": true\n    },\n    {\n        \"id\": 19,\n        \"identification\": \"258369147\",\n        \"name\": \"Andrés Vega\",\n        \"gender\": \"Male\",\n        \"age\": 44,\n        \"address\": \"Av. 12 de Octubre\",\n        \"phone\": \"099632587\",\n        \"clientId\": \"andres.vega\",\n        \"password\": \"av2468\",\n        \"status\": true\n    },\n    {\n        \"id\": 20,\n        \"identification\": \"147258369\",\n        \"name\": \"Mónica Jiménez\",\n        \"gender\": \"Female\",\n        \"age\": 32,\n        \"address\": \"Calle Portugal y 6 de Diciembre\",\n        \"phone\": \"098521473\",\n        \"clientId\": \"monica.jimenez\",\n        \"password\": \"mj1357\",\n        \"status\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 18,\r\n        \"date\": \"2025-05-01\",\r\n        \"transactionType\": \"DEPOSIT\",\r\n        \"amount\": 5000.00,\r\n        \"balance\": 1700.00,\r\n        \"accountId\": 6,\r\n        \"accountNumber\": \"963258\",\r\n        \"clientName\": \"Ana María Castro\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id\": 18,\r\n        \"date\": \"2025-05-01\",\r\n        \"transactionType\": \"DEPOSIT\",\r\n        \"amount\": 5000.00,\r\n        \"balance\": 1700.00,\r\n        \"accountId\": 6,\r\n        \"accountNumber\": \"963258\",\r\n        \"clientName\": \"Ana María Castro\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 21:18:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 32,\n    \"date\": \"2025-05-20\",\n    \"transactionType\": \"Deposit\",\n    \"amount\": 5000,\n    \"balance\": 16200,\n    \"accountId\": 6,\n    \"accountNumber\": \"963258\",\n    \"clientName\": \"Ana María Castro\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 13,\r\n        \"identification\": \"121359852\",\r\n        \"name\": \"Mateo Hernández\",\r\n        \"gender\": \"Female\",\r\n        \"age\": 27,\r\n        \"address\": \"Av. Amazonas y Patria\",\r\n        \"phone\": \"098523678\",\r\n        \"clientId\": \"Mateo.hernandez\",\r\n        \"password\": \"lh8642\",\r\n        \"status\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/clients",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id\": 13,\r\n        \"identification\": \"121359852\",\r\n        \"name\": \"Mateo Hernández\",\r\n        \"gender\": \"Female\",\r\n        \"age\": 27,\r\n        \"address\": \"Av. Amazonas y Patria\",\r\n        \"phone\": \"098523678\",\r\n        \"clientId\": \"Mateo.hernandez\",\r\n        \"password\": \"lh8642\",\r\n        \"status\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 21:19:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"identification\": \"121359852\",\n    \"name\": \"Mateo Hernández\",\n    \"gender\": \"Female\",\n    \"age\": 27,\n    \"address\": \"Av. Amazonas y Patria\",\n    \"phone\": \"098523678\",\n    \"clientId\": \"Mateo.hernandez\",\n    \"password\": \"lh8642\",\n    \"status\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/api/transactions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 18,\r\n        \"date\": \"2025-05-01\",\r\n        \"transactionType\": \"DEPOSIT\",\r\n        \"amount\": 5000.00,\r\n        \"balance\": 1700.00,\r\n        \"accountId\": 6,\r\n        \"accountNumber\": \"963258\",\r\n        \"clientName\": \"Ana María Castro\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/api/transactions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 17,\r\n        \"accountNumber\": \"1245787\",\r\n        \"type\": \"Saving\",\r\n        \"initialBalance\": 300.00,\r\n        \"status\": true,\r\n        \"clientId\": 20,\r\n        \"clientName\": \"Mónica Jiménez\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 21:21:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 17,\n    \"accountNumber\": \"1245787\",\n    \"type\": \"Saving\",\n    \"initialBalance\": 300,\n    \"status\": true,\n    \"clientId\": 20,\n    \"clientName\": \"Mónica Jiménez\"\n}"
+				}
+			]
+		}
+	]
+}
